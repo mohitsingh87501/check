@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Harmattan&display=swap" rel="stylesheet">
+
+</head>
+<script>
+    const form = document.getElementById('form1');
+    const username = document.getElementById('email');
+    const password = document.getElementById('password');
+    console.log("username is",username);
+    console.log("password is",password);
+    function gotosignpage(){
+        if((username || password) == null){
+            window.location.href= 'signup.html';
+        }else{
+            window.location.href= 'signup.html';
+        }
+    };
+    // function redirectTosignupPage() {
+    //   // Replace 'newpage.html' with the URL of the page you want to navigate to
+    //   window.location.href = 'signup.html';
+    // }
+</script>
+<body>
+    <div class="logo">
+        <div id="logo"></div>
+        <div id="logo_name">Keymoon.in</div>
+    </div>
+    <div class="bott">
+        <svg xmlns="http://www.w3.org/2000/svg" width="344" height="16" viewBox="0 0 341 16" fill="none">
+            <path d="M340.707 8.70711C341.098 8.31658 341.098 7.68342 340.707 7.29289L334.343 0.928932C333.953 0.538408 333.319 0.538408 332.929 0.928932C332.538 1.31946 332.538 1.95262 332.929 2.34315L338.586 8L332.929 13.6569C332.538 14.0474 332.538 14.6805 332.929 15.0711C333.319 15.4616 333.953 15.4616 334.343 15.0711L340.707 8.70711ZM0 9H340V7H0V9Z" fill="#22F2FF"/>
+        </svg>
+    </div>
+    <div id="vector1" class="up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="249" height="298" viewBox="0 0 249 298" fill="none">
+            <path d="M1.99997 -11C1.99997 121.879 78.5785 201.037 116.868 224.007C173.023 259.668 215.806 274.624 304 296" stroke="#22F2FF" stroke-width="4"/>
+        </svg>
+    </div>
+    <div id="vector2" class="up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="252" height="323" viewBox="0 0 252 323" fill="none">
+            <path d="M9.36044 -33.7853C-12.5373 97.277 49.9493 187.973 83.9299 216.938C133.44 261.366 173.174 283.168 256.639 318.785" stroke="#22FFCA" stroke-width="8"/>
+        </svg>
+    </div>
+    <div id="vector4" class="down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="116" height="115" viewBox="0 0 116 115" fill="none">
+            <path d="M2.66345 4.27923C31.5562 15.5924 73.0703 25.56 100.45 83.5822C127.83 141.605 94.7475 183.47 86.3417 210.733" stroke="#22FFCA" stroke-width="8" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div id="vector3" class="down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="131" height="115" viewBox="0 0 131 115" fill="none">
+            <path d="M-43.885 6.5455C-13.0995 2.66855 28.1282 -8.42448 79.9163 29.4468C131.705 67.3181 122.663 119.906 128.314 147.869" stroke="#22F2FF" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="817" height="584" viewBox="0 0 817 584" fill="none" id="vector5">
+        <path d="M-1 5.5C61.3333 12.1667 201 35.2 261 74C321 112.8 340.333 225.833 342.5 277.5C345.333 314.167 360 391.5 396 407.5C441 427.5 493 391 589.5 507.5C666.7 600.7 769.333 597.333 811 584" stroke="#22FFCA" stroke-width="10" stroke-linecap="round"/>
+      </svg>
+    <!-- <div id="vector5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="817" height="587" viewBox="0 0 817 587" fill="none">
+            <path d="M-1 5.5C61.3333 12.1667 201 35.2 261 74C321 112.8 340.333 225.833 342.5 277.5C345.333 314.167 360 391.5 396 407.5C441 427.5 493 391 589.5 507.5C666.7 600.7 769.333 597.333 811 584" stroke="#22FFCA" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+    </div> -->
+    <div id="circles">
+        <div id="circle1" class="cc">
+            <div class="c1 cs"></div>
+            <div class="c2 cs"></div>
+        </div>
+        <div id="circle2" class="cc">
+            <div class="c3 cs"></div>
+            <div class="c4 cs"></div>
+        </div>
+    </div>
+    <div id="fill_page">
+        <p class="login">login</p>
+        <form id ="form1" method="post">
+            <label id = "user_name" for="username">username</label>
+            <input class="in_put" type="email" name="Email" id="email" placeholder="your email">
+
+            <label id = "pass_word" for="password">password</label>
+            <input class="in_put" type="password" name="Password" id="password" placeholder="1234">
+
+            <input  class="btn" id = "login_btn" type="submit" value="login">
+            <button type="submit" class="btn" id ="signup_btn" value="Sign up" onclick="gotosignpage()">Sign up</button>
+            <p id="about">Forgot password</p>
+        </form>
+    </div>
+    <!-- <div class="svg1">
+        <svg xmlns="https://www.w3.org/2000/svg" veiwBox="0 0 817 587" width="350" height="350">
+            <circle cx="133" cy="121" r="120" stroke="2" fill="red"  class="circ1"/>
+        </svg>
+    </div> -->
+    <div id="images">
+        <div id="i1" class="s_image"></div>
+        <div id="i2" class="s_image"></div>
+        <div id="i3" class="s_image"></div>
+        <div id="i4" class="s_image"></div>
+        <div id="i5" class="s_image"></div>
+        <div id="i6" class="s_image"></div>
+    </div>
+
+    
+    
+</body>
+</html> 

@@ -1,0 +1,130 @@
+body {
+    width: 98vw;
+    height: 250vh;
+    background: linear-gradient(180deg, #1C1919 0%, #090808 12.5%, #0F0D0D 29.69%, rgba(28, 25, 25, 0.00) 100%);
+    /* background: linear-gradient(180deg, #000 33%, rgba(58, 46, 46, 0.75) 76.13%, rgba(129, 127, 127, 51) 159%); */
+    background-blend-mode: soft-light;
+}
+
+/* logo and title */
+
+#logo {
+    margin-top: -0.7%;
+    margin-left: 1%;
+    width: 21rem;
+    height: 7rem;
+    margin-right: 30%;
+}
+
+#f_logo {
+    display: flex;
+    background-image: url(images/logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3em;
+    height: 3em;
+    margin-top: 4%;
+    margin-left: -3%;
+}
+
+#s_logo {
+    display: flex;
+    width: 2em;
+    height: 1em;
+    color: #12E5F2;
+    text-shadow: 5px 4px 7px rgba(0, 23, 227, 0.30);
+    font-family: Give You Glory;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 32px;
+    backdrop-filter: blur(1px);
+    margin-top: 0%;
+    margin-left: 9%;
+}
+
+/* greet the name */
+
+#greet_name {
+    display: flex;
+    position: relative;
+    margin-top: -4rem;
+    margin-left: 20rem;
+    margin-right: 60%;
+    width: 41rem;
+    height: 5rem;
+}
+
+
+#greet_name .first {
+    z-index: 2;
+    color: #00F863;
+    text-align: center;
+    font-family: Marck Script;
+    font-size: 4.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.8125rem;
+    letter-spacing: -0.1625rem;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+#greet_name .second {
+    position: absolute;
+    z-index: 1;
+    color: #3CDCFF;
+    text-align: center;
+    font-family: Marck Script;
+    font-size: 4.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.8125rem;
+    letter-spacing: -0.1625rem;
+    filter: blur(11px);
+    margin-top: 0%;
+    margin-left: 0rem;
+}
+
+/* Buttons of start */
+
+.same_btn {
+    width: 7.775rem;
+    height: 2.875rem;
+    color: #13EAEA;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Kalam;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.8125rem;
+    letter-spacing: 0.11875rem;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px transparent;
+    background-color: rgba(56, 55, 64, 0.78);
+    border-radius: 13px;
+    margin: .4rem;
+
+}
+
+#btns {
+    display: flex;
+    margin-top: -8rem;
+    margin-left: 77rem;
+    margin-bottom: 30%;
+    /* margin-right: 10%; */
+    /* position: sticky; */
+
+}
+
+#login {
+    letter-spacing: 2px;
+}
+
+.same_btn:active {
+    border: 2px solid #13EAEA;
+    color: #13EAEA;
+    /*#5520ED;*/
+    background-color: black;
+}

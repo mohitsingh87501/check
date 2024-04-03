@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Harmattan&family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+</head>
+<script>
+    function btn_click(){
+        window.location.href = 'login.html';
+    }
+</script>
+<body>
+    <div class="logo">
+        <div id="logo"></div>
+        <div id="logo_name">Keymoon.in</div>
+    </div>
+    <div id="vector_0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="748" viewBox="0 0 1280 748" fill="none" class="vector1">
+            <path d="M-0.4021 2L618.608 167.339L983.811 517.28L1280 746" stroke="#1C1F1F" stroke-width="4" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="1271" height="744" viewBox="0 0 1271 744" fill="none" class="vector2">
+            <path d="M-0.0330811 2.03687L613.806 166.441L975.594 515.765L1269.09 744" stroke="#1C1F1F" stroke-width="4"/>
+        </svg>
+    </div>
+
+    
+    <div id="signup_box">
+        <p class="sign_p">Sign Up</p>
+        <form action="login.html" method="post">
+            <input type="text" name="first_name" id="f_name" class="same_input" placeholder="First name">
+            <input type="text" name="last_name" id="l_name" class="same_input" placeholder="Last name">
+            <input type="email" name="email" id="Email" class="same_input" placeholder="email">
+            <input type="tel" name="phone_number" id="phone_no" class="same_input" placeholder="Phone number">
+            <input type="password" name="password" id="Password" class="same_input" placeholder="password">
+            <input type="password" name="confirm_password" id="Confirm_password" class="same_input" placeholder="confirm password">
+            <button type="submit" id="submit_btn" onclick="btn_click()">Submit</button>
+        </form>
+        <p id="notify">email taken already</p>
+    </div>
+    <div id="vector_1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="565" height="379" viewBox="0 0 565 379" fill="none" class="vector3">
+            <path d="M564 2L149.591 197.565L2 386" stroke="#1C1F1F" stroke-width="4"/>
+        </svg>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="565" height="388" viewBox="0 0 565 388" fill="none" class="vector4">
+            <path d="M564 2L149.591 197.565L2 386" stroke="#1C1F1F" stroke-width="4"/>
+        </svg>
+    </div>
+
+    <div class="arc"></div>
+
+    <div id="images">
+        <div id="i1" class="s_image"></div>
+        <div id="i2" class="s_image"></div>
+        <div id="i3" class="s_image"></div>
+        <div id="i4" class="s_image"></div>
+        <div id="i5" class="s_image"></div>
+        <div id="i6" class="s_image"></div>
+    </div>
+</body>
+</html>

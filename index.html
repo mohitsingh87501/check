@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- these all are fonts which i used -->
+
+    <link rel="stylesheet" href="product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Devonshire&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Englebert&family=Finger+Paint&family=Fira+Sans:wght@100;200;300&family=Give+You+Glory&family=Harmattan&family=Kaushan+Script&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Fira+Sans:wght@100;200;300&family=Give+You+Glory&family=Harmattan&family=Kaushan+Script&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Harmattan&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Harmattan&family=Kaushan+Script&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Give+You+Glory&family=Harmattan&family=Kaushan+Script&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Finger+Paint&family=Fira+Sans:wght@100;200;300&family=Give+You+Glory&family=Harmattan&family=Kaushan+Script&family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<script>
+    const button = document.getElementsByClassName("size_btn");
+    const colors = ["#4E4949" , "#000000"];
+    let current_index = 0;
+    function size_btn_click(){
+        button.style.background = colors[current_index];
+        current_index = (current_index+1)%colors.length;
+    };
+
+    function redirectToLoginPage(){
+        window.location.href='login.html';
+    }
+
+</script>
+<body>
+    <header id="head">
+        <div id="logo">
+            <div id="f_logo"></div>
+            <div id ="s_logo">Keymoon</div>
+        </div>
+    
+        <div id="greet_name">
+            <p class="first">Hey Mohit !</p>
+            <p class="second">Hey Mohit !</p>
+        </div>
+    
+        <div id="btns">
+            <button id="profile" class="same_btn">Profile</button>
+            <button id="login" class="same_btn" onclick="redirectToLoginPage()">Login</button>
+        </div>
+    </header>
+
+    <nav id="navigation">
+        <div id="f_row">
+            <ul id="row1">
+                <li class="same_item left" id="home"><a href="#/">Home</a></li>
+                <li class="same_item left left1 " id="custom"><a href="#/">Custom</a></li>
+                <li class="same_item left left1" id="orders"><a href="#/">Orders</a></li>
+                <li class="same_item right" id="contact_us"><a href="#/">Contact us</a></li>
+                <div id="bag"><a href="/">1</a></div>
+            </ul>
+        </div>
+        <div id="s_row">
+            <ul id="row2">
+                <li class="row2_same" id="popular"><a href="#/">Popular</a></li>
+                <li class="row2_same" id="anime"><a href="#/">Anime</a></li>
+                <li class="row2_same" id="quotes"><a href="#/">Quotes</a></li>
+                <li class="row2_same" id="love"><a href="#/">Love</a></li>
+                <li class="row2_same" id="devotion"><a href="#/">Devotion</a></li>
+                <li class="row2_same" id="business"><a href="#/">Business</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="post">
+        <div id="f_main">
+            <div id="main_post"></div>
+            <button id="save_changes">Save Changes</button>
+        </div>
+
+    </section> 
+    <aside id="left_side_func">
+        <div id="background"></div>
+        <div id="color_setting">
+            <div id="color_head">
+                <span class="first same">Color</span>
+                <span class="second same">Color</span>
+            </div>
+            <div id="color_select">
+                <span class="first same">yellow</span>
+                <span class="second same">yellow</span>
+            </div>
+            <div id="color_box">
+                <table class="table_box"> 
+                    <tr class="table_row">
+                        <td class="table_cell">
+                            <button id="red" class="same_color both  extra_padd" onclick="choose_color(0)"></button>
+                            <div id="red_blur"class="same_blur both  extra_padd">
+                        </td>
+                        <td class="table_cell">
+                            <button id="white" class="same_color both  extra_padd" onclick = "choose_color(1)"></button>
+                            <div id="white_blur"class="same_blur both  extra_padd">
+                        </td>
+                        <td class="table_cell">
+                            <button id="off_white" class="same_color both  extra_padd" onclick = "choose_color(2)"></button>
+                            <div id="off_white_blur"class="same_blur both  extra_padd">
+                        </td>
+                        <td class="table_cell">
+                            <button id="green" class="same_color both  extra_padd" onclick = "choose_color(3)"></button>
+                            <div id="green_blur"class="same_blur both  extra_padd">
+                        </td>
+                        <td class="table_cell">
+                            <button id="yellow" class="same_color both  extra_padd" onclick = "choose_color(4)"></button>
+                            <div id="yellow_blur"class="same_blur both  extra_padd">
+                        </td>
+                        <td class="table_cell">
+                            <button id="pink" class="same_color both  extra_padd" onclick = "choose_color(5)"></button>
+                            <div id="pink_blur"class="same_blur both  extra_padd">
+                        </td>
+                        <td class="table_cell">
+                            <button id="purple" class="same_color both  extra_padd" onclick = "choose_color(6)"></button>
+                            <div id="purple_blur"class="same_blur both  extra_padd">
+                        </td>
+                        
+                        
+                    </tr>
+
+                    <tr class="table_row">
+                        <td class="table_cell">
+                            <button id="blue" class="same_color both nextra_padd" onclick = "choose_color(7)"></button>
+                            <div id="blue_blur" class="same_blur both nextra_padd" >
+                        </td>
+                        <td class="table_cell">
+                            <button id="sky_blue" class="same_color both nextra_padd" onclick = "choose_color(8)"></button>
+                            <div id="sky_blue_blur" class="same_blur both nextra_padd">
+                        </td>
+                        <td class="table_cell">
+                            <button id="neon_green" class="same_color both nextra_padd" onclick = "choose_color(9)"></button>
+                            <div id="neon_green_blur" class="same_blur both nextra_padd">
+                        </td>
+
+                        <!-- ther i can add more colors -->
+                        
+                    </tr>
+                </table>
+
+                
+            </div>
+        </div>
+
+        <div id="size_setting">
+            <p class="size_head">Size</p>
+            <div class="sizes">
+                <ul>
+                    <li class="small"><button class="size_btn" onclick="size_btn_click()">Small</button></li>
+                    <li class="medium"><button class="size_btn" onclick="size_btn_click()">Medium</button></li>
+                    <li class="larger"><button class="size_btn" onclick="size_btn_click()">Large</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="board_color">
+            <p class="board_color_head">Board</p>
+            <p class="b_color_select">Clear</p>
+            <div class="c_btn">
+                <button class="circle_button"></button>
+            </div>
+        </div>
+    </aside>
+
+    <aside id="right_aside_reviews">
+        <p class="review-heading">Reviews</p>
+        <div id="all_reviews">
+            <div id="rating">
+                <header class="f_header">
+                    <p class="ratings">Ratings: </p>
+                    <table class="all_rating_stars">
+                        <tr>
+                            <td id="result_star_1" class="result"></td>
+                            <td id="result_star_2" class="result"></td>
+                            <td id="result_star_3" class="result"></td>
+                            <td id="result_star_4" class="result"></td>
+                            <td id="result_star_5" class="result"></td>
+                        </tr>
+                    </table>
+                </header>
+                <section id="see_reviews">
+                    <div class="content">
+                        <h4>By Mohit Singh</h4>
+                        <table class="customer_all_rating_stars">
+                            <tr>
+                                <td id="customer_star_1" class="customer-result"></td>
+                                <td id="customer_star_2" class="customer-result"></td>
+                                <td id="customer_star_3" class="customer-result"></td>
+                                <td id="customer_star_4" class="customer-result"></td>
+                                <td id="customer_star_5" class="customer-result"></td>
+                            </tr>
+                        </table>
+                        <p class="describe">A very beautiful Sign Board and very suitable for my room ,So awesome</p>
+                        <p class="date-publish">12 september 2023</p>
+                    </div>
+                    <div class="content">
+                        <h4>by Co founder</h4>
+                        <table class="customer_all_rating_stars">
+                            <tr>
+                                <td id="customer_star_1" class="customer-result"></td>
+                                <td id="customer_star_2" class="customer-result"></td>
+                                <td id="customer_star_3" class="customer-result"></td>
+                                <td id="customer_star_4" class="customer-result"></td>
+                                <td id="customer_star_5" class="customer-result"></td>
+                            </tr>
+                        </table>
+                        <p class="describe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, odit.</p>
+                        <p class="date-publish">12 sep 2023</p>
+                    </div>
+                    <div class="content">
+                        <h4>by Co founder</h4>
+                        <table class="customer_all_rating_stars">
+                            <tr>
+                                <td id="customer_star_1" class="customer-result"></td>
+                                <td id="customer_star_2" class="customer-result"></td>
+                                <td id="customer_star_3" class="customer-result"></td>
+                                <td id="customer_star_4" class="customer-result"></td>
+                                <td id="customer_star_5" class="customer-result"></td>
+                            </tr>
+                        </table>
+                        <p class="describe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, odit.</p>
+                        <p class="date-publish">12 sep 2023</p>
+                    </div>
+                    <div class="content">
+                        <h4>by Co founder</h4>
+                        <table class="customer_all_rating_stars">
+                            <tr>
+                                <td id="customer_star_1" class="customer-result"></td>
+                                <td id="customer_star_2" class="customer-result"></td>
+                                <td id="customer_star_3" class="customer-result"></td>
+                                <td id="customer_star_4" class="customer-result"></td>
+                                <td id="customer_star_5" class="customer-result"></td>
+                            </tr>
+                        </table>
+                        <p class="describe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, odit.</p>
+                        <p class="date-publish">12 sep 2023</p>
+                    </div>
+                    <div class="content">
+                        <h4>by Co founder</h4>
+                        <table class="customer_all_rating_stars">
+                            <tr>
+                                <td id="customer_star_1" class="customer-result"></td>
+                                <td id="customer_star_2" class="customer-result"></td>
+                                <td id="customer_star_3" class="customer-result"></td>
+                                <td id="customer_star_4" class="customer-result"></td>
+                                <td id="customer_star_5" class="customer-result"></td>
+                            </tr>
+                        </table>
+                        <p class="describe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, odit.</p>
+                        <p class="date-publish">12 sep 2023</p>
+                    </div>
+                        <!-- here we add-reviews -->  
+                </section >
+                <footer id="add-review">
+                    <!-- <button class="review-btn">+</button> -->
+                    <!-- <input type="text" name="review-heading" id="review_head" placeholder="Review_heading"> -->
+                    <input type="text" name="review-box" id="my_review" placeholder="Write your Feedback">
+                    <table class="review-stars">
+                        <tr>
+                            <td><button id="star1" class="stars"></button></td>
+                            <td><button id="star2" class="stars"></button></td>
+                            <td><button id="star3" class="stars"></button></td>
+                            <td><button id="star4" class="stars"></button></td>
+                            <td><button id="star5" class="stars"></button></td>
+                        </tr>
+                    </table>
+                    
+                    <button type="submit" id="submit_btn" onclick="after_click()">Submit</button>
+                </footer>
+            <!-- </div>
+            <article>
+
+            </article>
+        </div> -->
+    </aside>
+
+    <aside id="buy_or_sell">
+        <button type="submit" class="sell_btn bys_btn" id="buy">Buy</button>
+       <div class="inc_dec_btn">  <!-- container -->
+            <button id="increment" class="button bys_btn" onclick="inc()">+</button>
+            <span id="counter">0</span>
+            <button id="decrement" class="button bys_btn" onclick="dec()">-</button>
+        </div>
+        <button type="submit" class="sell_btn bys_btn" id="add2cart">Add to Bag</button>
+        <p class="rupees">Rs</p>
+        <p id="amount">2000</p>
+        <p id="stock_remaining">20 left</p>
+    </aside>
+    <hr>
+    <section id="extra_products">
+        <p class="more-products">More Products</p>
+        <table id="list_products">
+            <tr id="product-row1" class="product_row">
+                
+            </tr>
+
+            <tr id="product-row2" class="product_row">
+                
+
+            </tr>
+            <tr id="product-row3" class="product_row">
+            </tr>
+
+            <!-- there you can add more rows of product(4*1) -->
+        </table>
+    </section>
+</body>
+<script src="product.js"></script>
+</html>
+
+
+
+<!-- 
+
+phone - 600px ,
+tablet - 768 px ,
+laptops - 992px ,
+desktop - 1200 px
+
+ -->
