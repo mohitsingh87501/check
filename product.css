@@ -19,7 +19,7 @@ header{
 
 #f_logo {
     display: flex;
-    background-image: url(images/logo.jpg);
+    background-image: url(logo.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 3em;
@@ -196,7 +196,7 @@ a {
 }
 
 #bag {
-    background-image: url('images/bag.png');
+    background-image: url('bag.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 2rem;
